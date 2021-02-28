@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Phoenix Williams Webpage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet2" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+        <a class="nav-link" href="mainpage.html">Main Page</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            Resources
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="ResourcesGettingStartedpage.html">Getting Started</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            Blogs
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Personal Blog</a>
+          <a class="dropdown-item" href="PHDBlogPage.html">PhD Blog</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contactpage.html">Contact</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="CodePage.html" style="color: white;">Code</a>
+      </li>
+  </ul>
+</nav>
+
+<div class="container-fluid" style="margin-top:80px">
+  <h1 class="display-3">Code and descriptions of my projects.</h1>
+</div>
+
+<div class="container">
+    <br>
+    <h5 style="text-align: center;">During my PhD course any implemented projects/algorithms will be shown here with an explaination and link
+    to the repository in my Github page.</h5>
+</div>
+
+<div class="container" style="width: 100%; margin-top: 5%;">
+    <!-- Control the column width, and how they should appear on different devices -->
+    <div class="row" style="margin-top: 5%; ">
+      <div class="col-md-4 col-md-30">
+        <img src="CodeImages/EDA.png" class="float-left" width="200" height="200" style="margin-left: 0;"> 
+      </div>
+      <div class="col-md-8 col-md-70">
+          <h5>Estimation Distribution Algorithm. (Python)</h5>
+          <a href="https://github.com/phoenixwilliams/EstimationDistributionAlgorithm">Code</a><br> <br>
+          Estimatation Distribution Algorithms are optimization algorithms that itertively build a probabilistic model of 
+          favourable solutions in the population and sample from the model to generate a new population. In the repository I 
+          have implemented a standard discrete, univariate gaussian and multi-variate gaussian mixture models. Of late, EDA 
+          algorithms are not frequently used, but probabilistic models are still heavily used, especially in machine learning
+          such as unsupervised learning to estimate data source.
+        </div>
+    </div>
+    <br>
+    <div class="row" style="margin-top: 5%; ">
+      <div class="col-md-4 col-md-30">
+        <img src="CodeImages/MTEA.png" class="float-left" width="200" height="200" style="margin-left: 0;"> 
+      </div>
+      <div class="col-md-8 col-md-70">
+          <h5>Evolutionary Multi-Task Optimization. (Python)</h5>
+          <a href="https://github.com/phoenixwilliams/MultiTaskLibrary">Code</a><br> <br>
+          Evolutionary Multi-Task Optimization is the application of Evlutionary Algorithms to the Multi-Task Optimization setting. 
+          Multi-Task optimization aims to exploit beneficial characteristics between functions to improve the optimization process 
+          within in a unified search space. Each function can be evaluated at each point in the unified search space. 
+          An example of beneficial characteristics would be overlapping optimum locations, where the optimization of one function
+          is easier than another. Exploiting these characteristics, the optimization of the difficult function would be made easier 
+          resulting in an improved optimization process. Since the first published work of applying evolutionary algorithms to the 
+          multi-task settings, other algorithms have been published with the aim of applying different evolutionary algorithms or 
+          improving the mechanism of information transfer between functions. This repository implements several algorithms in 
+          this research area.
+        </div>
+        <br>
+        <div class="row" style="margin-top: 5%; ">
+          <div class="col-md-4 col-md-30">
+            <img src="CodeImages/BO.png" class="float-left" width="200" height="150" style="margin-left: 0;"> 
+          </div>
+          <div class="col-md-8 col-md-70">
+              <h5>MOBO - Modular Implementation of Gaussian Process and Bayesian Optimization. (Python)</h5>
+              <a href="https://github.com/phoenixwilliams/MOBO">Code</a><br> <br>
+              Gaussian Process is a statistical model that applies the Bayes rule to predicting an unseen piece of data based on a 
+              training dataset. Whereas a lot of ML machine learning models are trained using backpropagation of a defined loss function, 
+              a Gaussian Process is trained by optimizing the likelihood function. A Gaussian Process is a non-parametric model, and so during 
+              its training, it is its hyper-parameters that get optimized rather than a set of weights used for estimating the underlying dataset
+              function as other ML models do. 
+              <br>
+              Whereas other optimization algorithms such as Evolutionary algorithms call the true objective function
+              thousands or even millions of times, the actual evaluation using the function may be really expensive or take hours to run, so 
+              it would take thousands of hours for an EA to be applied to these functions. 
+              A Gaussian Process is heavily used as the surrogate model in Bayesian Optimization, as not only 
+              can it predict the function value for unseen data but also the uncertainty in the prediction! Bayesian Optimization applies this 
+              Gaussian Process surrogate model to sample promising areas of the search space with the aim of optimizing a particular functions in 
+              as few evaluations as possible. Selecting the next point to sample is done through optimizing an <b>acquisition function</b> that 
+              uses the mean and variance prediction of the Gaussian Process. <br>
+              Inspired by GPyTorch implementation and to better my learning, I implemented MOBO - this library is still in its early days of 
+              development but my aim is to implement useful GP models such as Multi-Task GP or Additive GPs along with correspnding acquisition
+              functions so that different types Bayesian Optimization can be implemented and users can learn by reading the 
+              <b>easily understandable code!</b>
+            </div>
+        </div>
+        <br>
+    </div>
+    <br>
+    <br>
+  </div>
+</body>
+</html>
