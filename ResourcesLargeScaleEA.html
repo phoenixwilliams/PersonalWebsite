@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Phoenix Williams Webpage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet2" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark static-top">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+        <a class="nav-link" href="mainpage.html">Main Page</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="color: white;">
+            Resources
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="ResourcesGettingStartedpage.html">Getting Started</a>
+          <a class="dropdown-item" href="ResourcesLargeScaleEA.html">Large-Scale Evolutionary Algorithms</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            Blogs
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="PersonalBlogPage.html">Personal Blog</a>
+          <a class="dropdown-item" href="PHDBlogPage.html">PhD Blog</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contactpage.html">Contact</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="CodePage.html">Code</a>
+      </li>
+  </ul>
+</nav>
+
+<div class="container-fluid" style="margin-top:1%">
+  <h1 class="display-3">Large-Scale Evolutionary Algorithms</h1>
+</div>
+
+<div class="container-fluid">
+  <br>
+  <h5 style="text-align: center;"
+   class="text-fluid">
+    Evolutionary Algorithms (EA) are a family of optimization algorithms based on the thoery of
+    <a href="https://www.nationalgeographic.org/encyclopedia/theory-evolution/">Natural Selection.</a> 
+    Optimizing high-dimensional problems is a difficulty for all algorihms and EA's are no acception, 
+    this page provides works addressing this issue in the EA field. 
+  </h5>
+</div>
+
+<div class="container">
+  <br>
+  <br>
+  <ul>
+    <dt><h2>Survey/Study Papers</h2></dt>
+    <ul>
+      <li>2019 | Large‑scale evolutionary optimization: a survey and experimental
+        comparative study | Jun‑Rong Jian, Zhi‑Hui Zhan and Jun Zhang | 
+        <a href="LargeScaleEA/Large-scale evolutionary optimization; a survey and experimental comparative study.pdf">pdf</a>
+      </li>
+
+      <li>2018 | A Survey on Cooperative Co-Evolutionary Algorithms
+        | X. Ma and X. Li
+        | <a href="LargeScaleEA/A_Survey_on_Cooperative_Co-Evolutionary_Algorithms.pdf">pdf</a>
+      </li>
+
+      <li>2016 | Empirical Study of the Effect of Grouping Strategies for Large Scale Optimization
+      | H. Liu, Y. Wang, X. Liu, S. Guan
+      |<a href="LargeScaleEA/Empirical_study_of_effect_of_grouping_strategies_for_large_scale_optimization.pdf">pdf</a>
+      </li>
+
+    </ul>
+    <br>
+    <br>
+    <dt><h2>Decomposition Based Methods</h2></dt>
+    <br>
+    <h6 style="text-align: center;">Decomposition based methods handle high-dimensional problems by splitting the original problem in 
+    several lower-dimensional problems. Each lower-dimensional problem is then optimizes using an Evolutionary Algorithm in turn. The core focus of these
+    decomposition methods is the method of forming the sub-problems, evaluating each sub-problem and how much resource should be given to different 
+    sub-problems (some sub-problems may have larger impact on the original problem than others)</h6>
+    <br>
+    <br>
+    <ul>
+      <li>1994 | A Cooperative Coevolutionary Approach to Function Optimization | 
+        Mitchell A. Potter and Kenneth A. De Jong | <a href="LargeScaleEA/CCpaper.pdf">pdf</a></li>
+      <dd>- Original CC paper that all Decomposition approaches are based on</dd>
+
+      <li>2001 | Scaling up fast evolutionary programmingwith  cooperative  coevolution | 
+        Yong Liu, Xin Yao, Qiangfu Zhao and Tetsuya Higuchi | 
+        <a href="LargeScaleEA/Scaling_up_fast_evolutionary_programming_with_cooperative_coevolution.pdf">pdf</a></li>
+    
+      <li>2004 | A cooperative approach to particle swarm optimization |
+        Frans van den Bergh and Andries P.Engelbrecht | 
+        <a href="LargeScaleEA/A_Cooperative_approach_to_particle_swarm_optimization.pdf">pdf</a>
+      </li>
+
+      <li>2008 | Large-scale evolutionary optimization using cooperative coevolution 
+        | Z.Yang, K.Tang and X.Yao | 
+        <a href="LargeScaleEA/large scale evolutionary optimization using cooperative coevolution.pdf">pdf</a>
+      </li>
+
+      <li>2008 | Multilevel cooperative coevolution for large scale optimization 
+      | Z.hang, K.Tang and X.Yao | 
+      <a href="LargeScaleEA/Multilevel_cooperative_coevolution_for_large_scale_optimization.pdf">pdf</a>
+      </li>
+
+      <li>2010 | Cooperative coevolution with delta grouping for large-scale non-separable function optimization | 
+      M.N. Omidvar, X. Li and X. Xao |
+      <a href="LargeScaleEA/Cooperative_Co-evolution_with_delta_grouping_for_large_scale_non-separable_function_optimization.pdf">pdf</a>
+      </li>
+
+      <li>2011 | Smart use of computational resources based on 
+        contribution for cooperative coevolutionary algorithms
+        | M.N. Omidvar, X. Li and X. Yao
+        | <a href="LargeScaleEA/smart use of computational resources based on contribution for cooperative coevolutionary algorithms.pdf">pdf</a>
+      </li>
+
+      <li>2012 | Dependency Identification for Large Scale Optimization Problems 
+      | E. Sayed, D. Essam and R. Sarker,
+      | <a href="LargeScaleEA/Dependency_Identification_technique_for_large_scale_optimization_problems.pdf">pdf</a>
+      </li>
+
+      <li>2014 | Effiective Decomposition for Large-Scale Separable Continuous Functions for Cooperative Coevolutionary Algorithms
+      | M.N. Omidvar, Y. Mei, X. Li
+      | <a href="LargeScaleEA/Effective_decomposition_of_large-scale_separable_continuous_functions_for_cooperative_co-evolutionary_algorithms.pdf">pdf</a>
+      </li>
+
+      <li>2014 | Cooperative coevolution with differential grouping for large-scale optimization |
+      M.N Omidvar, X.Li, Y.Mei and X.Yao |
+      <a href="LargeScaleEA/Cooperative CoEvolution With Differential Grouping for Large Scale Optimization.pdf">pdf</a>
+      </li>
+
+      <li>2015 | Extended differential grouping for large scale global optimization with direct and indirect interactions | 
+      Y. Sun, M. Kirley and S.K. Halgamuge |
+      <a href="LargeScaleEA/Extended Differential Grouping for LSEA with direct and indirect interactions.pdf">pdf</a>
+      </li>
+
+      <li>2015 | Cooperative differentation evolution with fast variable interdepence learning for large scale optimization
+      | H. Ge, L. Sun, X. Yang and S. Yoshida
+      | <a href="LargeScaleEA/cooperative coevolution with fast interdependency identification for large scale optimization.pdf"></a>
+      </li>
+
+      <li>2016 | Cooperative coevolution with graph-based differential gropuing for large-scale global optimization | 
+      Y. Ling, H. li and B. Cao | 
+      <a href="LargeScaleEA/Coopertive Coevolution with Graph Based Differential Groupng for Large Scale Global Optimization.pdf">pdf</a>
+      </li>
+
+      <li>2016 | A Competitive Divide-and-Conquer Algorithm for
+        Unconstrained Large-Scale Black-Box Optimization
+        | Y. Mei, M.N. Omidvar and X. Li
+        | <a href="LargeScaleEA/A competitive divide and conquer to unconstrained block box optimization.pdf">pdf</a>
+      </li>
+
+      <li>2016 | CBCC3-A contribution-based cooperative co-evolutionary algorithm with improved exploration/exploitation balance
+      | M.N. Omnidvar, B. Kazimipour, X. Li and X. Yao
+      | <a href="LargeScaleEA/CBCC3__A_contribution-based_cooperative_co-evolutionary_algorithm_with_improved_exploration_exploitation_balance.pdf">pdf</a> </li>
+
+      <li>2017 | Efficient resource allocation in cooperative coevolution for large-sclae global optimization
+      | M. Yang, M.N. Omidvar, C. Li, X. Li, Z. Cai, B. Kazimipour and X. Yao 
+      | <a href="LargeScaleEA/Efficient_Resource_Allocation_in_Cooperative_Co-Evolution_for_Large-Scale_Global_Optimization.pdf">pdf</a>
+      </li>
+
+      <li>2017 | Quantifying Variable Interactions in Continuous Optimization Problems 
+      | Y. Sun and M. Kirley
+      | <a href="LargeScaleEA/Quantifying_Variable_Interactions_in_Continuous_Optimization_Problems.pdf">pdf</a>
+      </li>
+
+      <li>2017 | Overlapped cooperative coevolution for large-scale optimization 
+      | M.N. Omidvar, M. Yang, Y. Mei, X. Li and X. Yao 
+      | <a href="LargeScaleEA/Overlapped_cooperative_co-evolution_for_large_scale_optimization.pdf">pdf</a>
+      </li>
+
+      <li>2018 | Boosting cooperative coevolution for large scale optimization with a fine-grained computation resource allocation strategy
+      | Z. Ren, Y. Liang, A. Zhang, Y. Yang, Z. Feng and L. Wang
+      | <a href="LargeScaleEA/Boosting_Cooperative_Coevolution_for_Large_Scale_Optimization_With_a_Fine-Grained_Computation_Resource_Allocation_Strategy.pdf">pdf</a>
+      </li>
+
+      <li>2018 | A Recursive Decomposition Method for Large Scale Continuous Optimization 
+      | Y. Sun, M. Kirley and S. K. Halgamuge
+      | <a href="LargeScaleEA/A_Recursive_Decomposition_Method_for_Large_Scale_Continuous_Optimization.pdf">pdf</a>
+      </li>
+
+      <li>2018 | Cooperative coevolution with online optimizer selection for large-scale optimization
+      | Y. Sun, M. Kirley and X. Li,
+      | <a href="LargeScaleEA/cooperative coevolution with online selection for large scale optimization.pdf">pdf</a>
+      </li>
+
+      <li>2018 | Adaptive threshold parameter estimation with recursive differential grouping for problem decomposition
+      | Y. Sun, M.N. Omidvar, M. Kirley and X. Li
+      | <a href="LargeScaleEA/Adaptive threshold parameter estimation with recursive differential grouping for problem decompositions.pdf">pdf</a>
+      </li>
+
+      <li>2019 | Bandit-based cooperative coevolution for tackling contribution imbalance in large-scale optimization problems
+      | B. Kazimipour, M.N. Omidvar, A.K. Qin, X. Li and X. Yao
+      | <a href="LargeScaleEA/Bandit-based cooperative coevolution for tackling contribution imbalance in large-scale optimization problems.pdf">pdf</a>
+      </li>
+
+      <li>2019 | Differential Grouping with Spectral Clustering for Large Scale Global Optimization 
+      | L. Li, W. Feng, Q. Wang and J. Sun
+      | <a href="LargeScaleEA/Differential_Grouping_with_Spectral_Clustering_for_Large_Scale_Global_Optimization.pdf">pdf</a>
+      </li>
+      <dd>- Runner Up of the CEC Competition on Large-Scale Global Optimization (2019)</dd>
+
+      <li>2019 | Decomposition for Large-scale Optimization Problems with Overlapping Components 
+      | Y. Sun, X. Li, A. Ernst and M.N. Omidvar
+      | <a href="LargeScaleEA/Decomposition_for_Large-scale_Optimization_Problems_with_Overlapping_Components.pdf">pdf</a>
+      </li>
+      <dd>- Winner of the CEC Competition on Large-Scale Global Optimization (2019)</dd>
+
+      <li>2021 | DG2: A faster and more accurate differential grouping for large-scale black box optimization 
+      | M.N Omidvar, M. Yang, Y. Mei, X. Li and X. Yao
+      | <a href="LargeScaleEA/DG2- A faster and more accurate differential grouping for large-scale black box optimization .pdf">pdf</a>
+      </li>
+
+      <li>2021 | An efficient recursive differential grouping for large-scale continuous problems 
+      | M. Yang, A.Zhou, C.Li and X. Li 
+      | <a href="LargeScaleEA/An efficient recursive differential grouping forlarge-scale continuous problems.pdf">pdf</a>
+      </li>
+
+
+    </ul>
+  </ul>
+</div>
+
+</body>
+</html>
