@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Phoenix Williams Webpage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet2" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark static-top">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+        <a class="nav-link" href="mainpage.html">Main Page</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            Resources
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="ResourcesGettingStartedpage.html">Getting Started</a>
+          <a class="dropdown-item" href="ResourcesLargeScaleEA.html">Large-Scale Evolutioanry algorithms</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            Blogs
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="PersonalBlogPage.html">Personal Blog</a>
+          <a class="dropdown-item" href="PHDBlogPage.html">PhD Blog</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contactpage.html">Contact</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="publications.html" style="color: white;">Publications</a>
+      </li>
+
+       <!--
+      <li class="nav-item">
+        <a class="nav-link" href="CodePage.html">Code</a>
+      </li>
+      -->
+  </ul>
+</nav>
+
+<div class="container-fluid" style="margin-top:1%">
+  <h1 class="display-3">Publications</h1>
+</div>
+
+<div class="container-fluid">
+    <br>
+    <h5 style="text-align: left;">Here I will post a list of my publications with links the paper and my code.</h5>
+</div>
+
+<div class="container-fluid" style="text-align: center; margin-top: 5%;">
+  <div class="row">
+    <div class="col-4">
+      <img src="CodeImages/MTRG.pdf" class="img-fluid" width="300vw" style="margin-left: 0;"> 
+    </div>
+    <div class="col-2">
+      <p style="text-align: center;">
+        <a href="https://github.com/phoenixwilliams/LSEA_MTG">Code</a> <br>
+        <a href="publications/smc21.pdf">Paper</a>
+      </p>
+    </div>
+    <div class="col">
+      <h5>Large-Scale Evolutionary Optimization via Multi-Task Random Grouping</h5>
+      <p style="font-size:small;">
+        Abstract-Evolutionary Algorithms (EA) are known to suffer from the curse of dimensionality
+        resulting in poor performances when handling large-scale problems. Cooperative 
+        coevolution aims to overcome these issues in a divide and conquer approach by 
+        decomposing the original problem into several lower-dimensional sub-problems. 
+        For each sub-problem a chosen EA is applied for a defined number of function 
+        evaluations. This is repeated in a round robin like fashion until a terminating 
+        condition is met. A recently proposed area in the evolutionary computation field 
+        is the evolutionary multi- task optimization (EMTO) framework. By jointly 
+        optimising several tasks, EMTO aims to exploit beneficial information across 
+        multiple tasks to improve the performance compared to optimising each task in 
+        isolation. In this paper, we consider a large-scale problem as a multi-task 
+        optimization problem by considering each sub-problem as an independent task.
+        Applying an EMTO algorithm, knowledge transfer across sub- problems is carried 
+        out explicitly to improve the optimization of each sub-problem. We evaluate the
+        effectiveness of our proposed algorithms empirically on a suite of separable
+        and non-separable benchmark problems of varying dimensions.
+      </p>
+    </div>
+  </div>
+</div>
+  
+
+</div>
+</body>
+</html>
